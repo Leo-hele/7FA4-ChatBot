@@ -6,7 +6,7 @@ a = Analysis(
     ['7FA4chatbot.py'],  # 你的主文件
     pathex=[],  # 搜索路径
     binaries=[],  # 二进制文件
-    datas=[('static/api.jimmy',)],  # 数据文件
+    datas=[('static/api.jimmy', 'static')],  # 数据文件
     hiddenimports=['your_module'],  # 隐藏导入
     hookspath=[],
     hooksconfig={},
@@ -37,5 +37,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='static/7FA4.png',  # 可以添加图标路径
+    icon='static/7FA4.ico',  # 可以添加图标路径
 )
